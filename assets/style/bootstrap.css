@@ -4,7 +4,7 @@
  * Copyright 2011-2022 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root,
+/* :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -124,9 +124,9 @@
   --bs-breakpoint-lg: 992px;
   --bs-breakpoint-xl: 1200px;
   --bs-breakpoint-xxl: 1400px;
-}
+} */
 
-[data-bs-theme=dark] {
+/* [data-bs-theme=dark] {
   --bs-body-color: #adb5bd;
   --bs-body-color-rgb: 173, 181, 189;
   --bs-body-bg: #212529;
@@ -174,7 +174,7 @@
   --bs-code-color: #e685b5;
   --bs-border-color: #495057;
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
-}
+} */
 
 *,
 *::before,
@@ -278,11 +278,6 @@ address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
-}
-
-ol,
-ul {
-  padding-left: 2rem;
 }
 
 ol,
