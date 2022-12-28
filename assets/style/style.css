@@ -11,7 +11,7 @@
   box-sizing: border-box;
   list-style: none;
 }
-a{
+a {
   text-decoration: none !important;
 }
 /* navbar start */
@@ -133,43 +133,86 @@ a{
   cursor: pointer;
   text-transform: uppercase;
 }
-.product_price{
+.product_price {
   font-size: 18px;
 }
-.product_price_list{
+.product_price_list {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.filter_body{
+.filter_body {
   background-color: aliceblue;
   width: 430px;
   padding: 15px 15px;
 }
-.filter_body{
+.filter_body {
   display: none;
   position: absolute;
   top: 25px;
   right: 1px;
 }
-.filter:hover .filter_body{
+.filter:hover .filter_body {
   display: block;
   cursor: pointer;
 }
 /* card start */
-.name_card{
+.name_card {
   font-size: 14px;
   font-family: var(--title_fontFamily);
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
 }
-.price_card{
-  text-align: center;
+.card-text-item {
+  font-size: 16px;
   font-family: var(--title_fontFamily);
-  color:#c6cdd1;
+  color: #ccd6dc;
 }
-.card_hover:hover{
- transform: scale(1.01); 
+.discount {
+  color: black;
 }
+.card {
+  cursor: pointer;
+  overflow: hidden;
+}
+.card:hover .image img {
+  transform: scale(1.05) translateZ(0);
+}
+.image img {
+  width: 100%;
+  transition: 0.2s ease-out;
+  transform: scale(1) translateZ(0);
+}
+.title {
+  position: relative;
+}
+.add_card {
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  opacity: 0;
+  pointer-events: none;
+}
+.add_card .add_card_item {
+  position: absolute;
+}
+.card:hover .add_card {
+  opacity: 1;
+  transition: 0.3s ease;
+  transform: translateX(35%);
+  pointer-events: auto;
+}
+.price {
+  position: relative;
+  pointer-events: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover .price {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(60px);
+}
+
 /* card end */
 /* main end  */
