@@ -216,3 +216,9 @@ a {
 
 /* card end */
 /* main end  */
+/* respons start */
+@media screen and(max-width: 1320px) {
+  main{
+    padding: 0 50px;
+  }
+}
