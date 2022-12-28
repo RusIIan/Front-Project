@@ -215,10 +215,57 @@ a {
 }
 
 /* card end */
+
 /* main end  */
+
+/*footer start*/
+#footer_info{
+  background-color: #fefaf3;
+}
+
+/* footer end */
 /* respons start */
-@media screen and(max-width: 1320px) {
-  main{
-    padding: 0 50px;
+@media (max-width: 1380px) {
+  .column {
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 40px;
   }
+}
+@media (max-width: 1200px) {
+  .column {
+    flex: 40%;
+    max-width: 40%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .column {
+    flex: 60%;
+    max-width: 60%;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 80%;
+    max-width: 80%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+.rowt {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.column {
+  flex: 100%;
+  max-width: 30%;
+  padding: 0 12px;
 }
