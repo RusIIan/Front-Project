@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>About</title>
+    <title>With Category Filter</title>
 </head>
 
 <body>
@@ -41,17 +41,19 @@
 
 
     <main>
-        <section id="about">
-                <div class="aboutUs text-center">
-                    <h1>About Us</h1>
+        <section id="category">
+            <div class="container">
+                <div class="category_filter">
+                    <h1>With Category Filter</h1>
                     <p>Where flowers are our inspiration</p>
                 </div>
+            </div>
         </section>
 
     <section id="all_category">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-9 mt-5">
+            <div class="row align-items-center mt-5">
+                <div class="col-9">
                     <div class="category-product">
                         <ul class="category-item">
                             <li class="category_list active"><a class="category_link">All</a></li>
@@ -64,50 +66,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-3 text-end">
-                    <ul class="filter">
-                        <div class="filter_content"><span>filter</span> <i class="bi bi-caret-down-fill"></i>
-                            <div class="filter_body">
-                                <div class="container ">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="filter_drop_header">
-                                                <h4>Sort By</h4>
-                                            </div>
-                                            <ul class="product_price">
-                                                <li class="product_price_list"><a>Defoult</a></li>
-                                                <li class="product_price_list"><a>Popularity</a></li>
-                                                <li class="product_price_list"><a>Newness</a></li>
-                                                <li class="product_price_list"><a>Price:Low To High</a></li>
-                                                <li class="product_price_list"><a>Price:High To Low</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="filter_drop_header">
-                                                <h4>Price Range</h4>
-                                            </div>
-                                            <ul class="product_price">
-                                                <li class="product_price_list"><a>All</a></li>
-                                                <li class="product_price_list"><a>$0-$10</a></li>
-                                                <li class="product_price_list"><a>$10-$20</a></li>
-                                                <li class="product_price_list"><a>$20-$30</a></li>
-                                                <li class="product_price_list"><a>$30-$40</a></li>
-                                                <li class="product_price_list"><a>$40+</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-                <div class="res_cart">
+                <div class="res_cart mb-5">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-                        <div class="col cart_res">
-                            <div class="card " >
+                        <div class="col mt-5 cart_res">
+                            <div class="card buy" >
                                 <div class="image">
-                                    <img class="card_hover" src="/assets/img/shop-14-img.jpg" class="card-img-top"
+                                    <img class="card_hover" src="/assets/img/catalog/shop-14-img.jpg" class="card-img-top"
                                         alt="...">
+                                        <div class="new">
+                                            <span>New</span>
+                                        </div>
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">MAJESTY PALM</h6>
@@ -120,10 +88,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res">
+                        <div class="col mt-5 cart_res">
                             <div class="card" >
                                 <div class="image">
-                                    <img src="/assets/img/shop-13-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-13-img.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Foxglove Flower</h6>
@@ -136,10 +104,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res ">
-                            <div class="card" >
+                        <div class="col mt-5 cart_res ">
+                            <div class="card buy" >
                                 <div class="image">
-                                    <img src="/assets/img/shop-10-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-3-img.jpg" class="card-img-top" alt="...">
+                                    <div class="sold">
+                                        <span>Sold</span>
+                                    </div>
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Sweet Alyssum</h6>
@@ -152,15 +123,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res">
+                        <div class="col mt-5 cart_res">
                             <div class="card" >
                                 <div class="image">
-                                    <img src="/assets/img/shop-11-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-4-img.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Spring Snowflake</h6>
                                     <div class="add_card">
-                                        <p class="card-text-item">Add to Cart</p>
+                                        <p class="card-text-item">Select Options</p>
                                     </div>
                                     <div class="price">
                                         <p class="card-text-item">$259</p>
@@ -168,10 +139,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res">
-                            <div class="card" >
+                        <div class="col mt-5 cart_res">
+                            <div class="card buy" >
                                 <div class="image">
-                                    <img src="/assets/img/shop-12-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-5-img.jpg" class="card-img-top" alt="...">
+                                    <div class="sale">
+                                        <span>Sale</span>
+                                    </div>
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Scarlet Sage</h6>
@@ -184,10 +158,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res">
+                        <div class="col mt-5 cart_res">
                             <div class="card" >
                                 <div class="image">
-                                    <img src="/assets/img/shop-9-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-6-img.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Rock Soapwort</h6>
@@ -200,10 +174,77 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res">
+                        <div class="col mt-5 cart_res">
                             <div class="card" >
                                 <div class="image">
-                                    <img src="/assets/img/shop-8-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-7-img.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="title card-body">
+                                    <h6 class="card-text name_card">Summer Savory</h6>
+                                    <div class="add_card">
+                                        <p class="card-text-item">Buy on Amazon</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="card-text-item">$259</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5 cart_res">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="/assets/img/catalog/shop-8-img.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="title card-body">
+                                    <h6 class="card-text name_card">Wild Roses</h6>
+                                    <div class="add_card">
+                                        <p class="card-text-item">Buy on Amazon</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="card-text-item">$259</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5 cart_res">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="/assets/img/catalog/shop-9-img.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="title card-body">
+                                    <h6 class="card-text name_card">Scarlet Sage</h6>
+                                    <div class="add_card">
+                                        <p class="card-text-item">View products</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="card-text-item"><s>$259</s> <span class="discount">$159</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5 cart_res">
+                            <div class="card buy">
+                                <div class="image">
+                                    <img src="/assets/img/catalog/shop-12-img.jpg" class="card-img-top" alt="...">
+                                    <div class="sale">
+                                        <span>Sale</span>
+                                    </div>
+                                </div>
+                                <div class="title card-body">
+                                    <h6 class="card-text name_card">Rock Soapwort</h6>
+                                    <div class="add_card add_card_item">
+                                        <p class="card-text-item">View products</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="card-text-item">$259</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mt-5 cart_res">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="/assets/img/catalog/shop-11-img.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Summer Savory</h6>
@@ -216,15 +257,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col cart_res">
-                            <div class="card">
+                        <div class="col mt-5 cart_res">
+                            <div class="card buy">
                                 <div class="image">
-                                    <img src="/assets/img/shop-7-img.jpg" class="card-img-top" alt="...">
+                                    <img src="/assets/img/catalog/shop-10-img.jpg" class="card-img-top" alt="...">
+                                    <div class="sold">
+                                        <span>Sold</span>
+                                    </div>
                                 </div>
                                 <div class="title card-body">
                                     <h6 class="card-text name_card">Wild Roses</h6>
                                     <div class="add_card">
-                                        <p class="card-text-item">Buy on Amazon</p>
+                                        <p class="card-text-item">Read more</p>
                                     </div>
                                     <div class="price">
                                         <p class="card-text-item">$259</p>
@@ -238,66 +282,6 @@
         </div>
     </section>
 
-
-
-        <section class="flower_export">
-            <div class="flower_exports">
-                <div class="container">
-                    <div class="flower_export_header title text-center">
-                        <div class="col-lg-6 col-md-12 m-auto">
-                            <h2 class="mb-4">Flower Experts</h2>
-                            <p>A perfect blend of creativity, energy, communication, happiness and love. Let us
-                                arrange a
-                                smile
-                                for you.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flowers_employee">
-                        <div class="row">
-                            <div class="col">
-                                <div class="flowers_content text-center">
-                                    <img src="/assets/img/people/h3-team-img-1.png" alt="">
-                                    <div class="content p-4">
-                                        <h6 class="m-0">Crystal Brooks</h6>
-                                        <span>Florist</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="flowers_content text-center">
-                                    <img src="/assets/img/people/h3-team-img-2.png" alt="">
-                                    <div class="content p-4">
-                                        <h6 class="m-0">Shirley Harris</h6>
-                                        <span>Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="flowers_content text-center">
-
-                                    <div class="img"><img src="/assets/img/people/h3-team-img-3.png" alt=""></div>
-                                    <div class="content p-4">
-                                        <h6 class="m-0">Beverly Clark</h6>
-                                        <span>Florist</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="flowers_content text-center">
-                                    <img src="/assets/img/people/h3-team-img-4.png" alt="">
-                                    <div class="content p-4">
-                                        <h6 class="m-0">Amanda watkins</h6>
-                                        <span>Florist</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
     </main>
     <footer>
         <section id="footer_info">

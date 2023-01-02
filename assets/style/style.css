@@ -452,4 +452,60 @@ header #navigation-first .navigation_body ul .nav_link_cart {
     color: #6d6a6a;
     transform: rotate(90deg);
   }
+}
+main #category {
+  height: 25vh;
+  background-color: #fafaf9;
+  display: flex;
+  align-items: center;
+}
+main #category .category_filter h1 {
+  font-size: 50px;
+  font-family: var(--heading_fontFamily);
+  font-weight: 400;
+}
+main #category .category_filter p {
+  font-size: 17px;
+  font-family: "Lora";
+  font-style: italic;
+  color: #8e8e8e;
+}
+main .buy {
+  position: relative;
+}
+main .new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid;
+  padding: 5px 14px;
+  color: white;
+  background-color: #f34f3f;
+  font-family: var(--heading_fontFamily);
+}
+main .sold {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid;
+  padding: 5px 14px;
+  color: white;
+  background-color: #000000;
+  font-family: var(--heading_fontFamily);
+}
+main .sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid transparent;
+  padding: 5px 14px;
+  color: rgb(3, 0, 0);
+  background-color: #ffffff;
+  font-family: var(--heading_fontFamily);
+}
+main .card-text-item {
+  margin-top: 5px;
+}
+main .card-text-item:hover {
+  color: #f34f3f;
 }/*# sourceMappingURL=style.css.map */

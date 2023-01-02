@@ -481,11 +481,10 @@ main {
     color: #6d6a6a;
     transform: rotate(90deg);
   }
-  
 }
-.questions_disable_second{
-    display: none;
-  }
+.questions_disable_second {
+  display: none;
+}
 #information {
   // margin-top: -13px !important;
   .info {
@@ -497,7 +496,7 @@ main {
         color: #f34f3f;
       }
     }
-    span{
+    span {
       font-size: 17px;
       padding-bottom: 15px;
       color: #6d6a6a;
@@ -506,31 +505,93 @@ main {
 }
 
 // FAQ pages respons start
-@media screen and (max-width:1000px) {
-  .questions_disable_first{
+@media screen and (max-width: 1000px) {
+  .questions_disable_first {
     display: none;
   }
-  .questions_disable_second{
+  .questions_disable_second {
     display: block;
   }
- #aside_search {
-  position: relative;
-  .search {
-    height: 50px;
-    width: 100%;
-    padding: 15px;
-    font-size: 13px;
-    font-family: var(--title_fontFamily);
+  #aside_search {
+    position: relative;
+    .search {
+      height: 50px;
+      width: 100%;
+      padding: 15px;
+      font-size: 13px;
+      font-family: var(--title_fontFamily);
+    }
+    .fa-search {
+      position: absolute;
+      top: 18px;
+      right: 2.5%;
+      color: #6d6a6a;
+      transform: rotate(90deg);
+    }
   }
-  .fa-search {
-    position: absolute;
-    top: 18px;
-    right: 2.5%;
-    color: #6d6a6a;
-    transform: rotate(90deg);
-  }
-  
-}
 }
 // FAQ pages respons end
 // FAQ pages end
+// Category filter start
+main {
+  #category {
+    height: 25vh;
+    background-color: #fafaf9;
+    display: flex;
+    align-items: center;
+    .category_filter {
+      h1 {
+        font-size: 50px;
+        font-family: var(--heading_fontFamily);
+        font-weight: 400;
+      }
+      p{
+        font-size: 17px;
+        font-family: 'Lora';
+        font-style: italic;
+        color: #8e8e8e;
+      }
+    }
+  }
+  .buy{
+    position: relative;
+  }
+  .new{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid;
+    padding: 5px 14px;
+    color: white;
+    background-color: #f34f3f;
+    font-family: var(--heading_fontFamily);
+  }
+   .sold{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid;
+    padding: 5px 14px;
+    color: white;
+    background-color: #000000;
+    font-family: var(--heading_fontFamily);
+  }
+  .sale{
+      position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid transparent;
+    padding: 5px 14px;
+    color: rgb(3, 0, 0);
+    background-color: #ffffff;
+    font-family: var(--heading_fontFamily);
+  }
+  .card-text-item{
+      margin-top: 5px;
+    &:hover{
+      color:#f34f3f;
+    }
+  }
+}
+
+// Category filter end
