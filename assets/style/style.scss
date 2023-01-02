@@ -232,7 +232,27 @@ main {
     font-size: 13px;
     outline: transparent;
     border: transparent;
-    // font-family: var(--heading_fontFamily);/
+  }
+}
+#about_blog {
+  background-color: #f8f8f8;
+  height: 100%;
+  .blog-name {
+    font-family: var(--heading_fontFamily);
+    font-size: 22px;
+  }
+  .from_blog{
+    padding-top: 7%;
+    h2{
+      font-size: 45px;
+    }
+    p{
+      margin-top: 1.5%;
+      padding-bottom: 2%;
+      color: #8e8e8e;
+      font-size: 18px;
+      width: 53%;
+    }
   }
 }
 // media queries
@@ -356,18 +376,19 @@ main {
 }
 @media screen and(max-width:700px) {
   #join_to_us {
-    .search_input{
-     width: 300px;
+    .search_input {
+      width: 300px;
     }
   }
 }
 @media screen and(max-width:420px) {
   #join_to_us {
-    .search_input{
-     width: 300px;
+    .search_input {
+      width: 300px;
     }
-    .search_button{
+    .search_button {
       margin-top: 5px;
     }
   }
 }
+

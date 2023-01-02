@@ -253,7 +253,7 @@
   max-width: 100%;
 }
 .footer_head {
-  padding-top: 75px;
+  /* padding-top: 75px; */
 }
 .footer_content {
   margin-top: 25px;
@@ -276,10 +276,13 @@
   transition: 0.3s;
   cursor: pointer;
 }
+@media screen and(max-width:600px) {
+
+}
 /* footer info end */
 
 /* footer bottom start */
-/* .footer_bottom_CA p {
+.footer_bottom_CA p {
   font-size: 13px;
   color: #86939e;
 }
@@ -304,8 +307,9 @@
 .footer_bottom_social a:hover {
   cursor: pointer;
   color: rgba(255, 0, 0, 0.549);
-} */
+} 
 /* footer bottom end
+
 /* footer end */
 
 /* respons start */
