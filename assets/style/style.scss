@@ -144,7 +144,7 @@ main {
             font-size: 14px;
             margin-left: 15px;
             padding: 15px 15px;
-            color: #ccd6dc;
+            color: #6d6f70;
             font-family: var(--title_fontFamily);
             text-transform: capitalize;
           }
@@ -173,6 +173,7 @@ main {
             font-weight: 400;
             font-size: 17px;
             width: 43%;
+            margin: 5px 0 5px 0 !important;
           }
           img {
             width: 25%;
@@ -199,6 +200,7 @@ main {
     }
   }
 }
+
 #join_to_us {
   background-image: url("../img/h3-background-img.jpg");
   background-repeat: no-repeat;
@@ -241,12 +243,12 @@ main {
     font-family: var(--heading_fontFamily);
     font-size: 22px;
   }
-  .from_blog{
+  .from_blog {
     padding-top: 7%;
-    h2{
+    h2 {
       font-size: 45px;
     }
-    p{
+    p {
       margin-top: 1.5%;
       padding-bottom: 2%;
       color: #8e8e8e;
@@ -255,6 +257,7 @@ main {
     }
   }
 }
+
 // media queries
 @media screen and (max-width: 1080px) {
   header {
@@ -314,6 +317,7 @@ main {
     margin-left: 0;
   }
 }
+// slider respons start header
 @media screen and(max-width:1310px) {
   #slider {
     .owl-carousel {
@@ -340,7 +344,7 @@ main {
       .item {
         .owl-text-overlay {
           .text-slider {
-            font-size: 25px;
+            font-size: 30px;
           }
           .text-slider_p {
             font-size: 14px;
@@ -360,20 +364,41 @@ main {
       .item {
         .owl-text-overlay {
           .text-slider {
-            font-size: 10px;
+            font-size: 20px;
           }
           .text-slider_p {
-            font-size: 50%;
+            font-size: 80%;
             width: 50%;
           }
           .slider_img {
-            width: 9%;
+            width: 15%;
           }
         }
       }
     }
   }
 }
+@media screen and(max-width:500px) {
+  #slider {
+    .owl-carousel {
+      .item {
+        .owl-text-overlay {
+          .text-slider {
+            font-size: 10px;
+          }
+          .text-slider_p {
+            font-size: 60%;
+            width: 90%;
+          }
+          .slider_img {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+}
+// slider respons end
 @media screen and(max-width:700px) {
   #join_to_us {
     .search_input {
@@ -392,3 +417,120 @@ main {
   }
 }
 
+// about pages start
+#about {
+  background-image: url("../img/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUs {
+  h1 {
+    font-size: 50px;
+    font-family: var(--heading_fontFamily);
+  }
+  p {
+    font-size: 18px;
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: #6d6a6a;
+  }
+}
+// about pages end
+
+// FAQ pages start
+#aside_and_article {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+#questions {
+  .aside_header {
+    text-transform: uppercase;
+    font-family: var(--title_fontFamily);
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .aside_list {
+    .aside_list_item {
+      margin-top: 11px;
+      font-size: 12px;
+      color: #6d6a6a;
+      font-family: var(--title_fontFamily);
+      letter-spacing: 0.2px;
+    }
+  }
+}
+#aside_search {
+  position: relative;
+  .search {
+    height: 50px;
+    width: 90%;
+    padding: 15px;
+    font-size: 13px;
+    font-family: var(--title_fontFamily);
+  }
+  .fa-search {
+    position: absolute;
+    top: 18px;
+    right: 22%;
+    color: #6d6a6a;
+    transform: rotate(90deg);
+  }
+  
+}
+.questions_disable_second{
+    display: none;
+  }
+#information {
+  // margin-top: -13px !important;
+  .info {
+    .info_name {
+      font-family: var(--heading_fontFamily);
+      .info_number {
+        font-family: var(--heading_fontFamily);
+        font-size: 30px;
+        color: #f34f3f;
+      }
+    }
+    span{
+      font-size: 17px;
+      padding-bottom: 15px;
+      color: #6d6a6a;
+    }
+  }
+}
+
+// FAQ pages respons start
+@media screen and (max-width:1000px) {
+  .questions_disable_first{
+    display: none;
+  }
+  .questions_disable_second{
+    display: block;
+  }
+ #aside_search {
+  position: relative;
+  .search {
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+    font-size: 13px;
+    font-family: var(--title_fontFamily);
+  }
+  .fa-search {
+    position: absolute;
+    top: 18px;
+    right: 2.5%;
+    color: #6d6a6a;
+    transform: rotate(90deg);
+  }
+  
+}
+}
+// FAQ pages respons end
+// FAQ pages end
