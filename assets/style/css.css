@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap");
+:root {
+  --heading_fontFamily: "Playfair Display", serif;
+  --title_fontFamily: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* /* card start */
+.name_card {
+  font-size: 14px;
+  font-family: var(--title_fontFamily);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.card-text-item {
+  font-size: 16px;
+  font-family: var(--title_fontFamily);
+  color: #ccd6dc;
+}
+.discount {
+  color: black;
+}
+.card {
+  cursor: pointer;
+  overflow: hidden;
+}
+.card:hover .image img {
+  transform: scale(1.05) translateZ(0);
+}
+.image img {
+  width: 100%;
+  transition: 0.2s ease-out;
+  transform: scale(1) translateZ(0);
+}
+.title {
+  position: relative;
+}
+.add_card {
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  opacity: 0;
+  pointer-events: none;
+}
+.add_card .add_card_item {
+  position: absolute;
+}
+.card:hover .add_card {
+  opacity: 1;
+  transition: 0.3s ease;
+  transform: translateX(35%);
+  pointer-events: auto;
+}
+.price {
+  position: relative;
+  pointer-events: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover .price {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(60px);
+}
+*/
+/* card end */
+
+/* video start*/
+.video-content {
+  background-color: #f7f7f7;
+  padding: 110px 0;
+}
+.video {
+  overflow: hidden;
+  cursor: pointer;
+}
+.video:hover .video_body a img {
+  transform: scale(1.05) translateZ(0);
+}
+.video_body {
+  position: relative;
+}
+.video_body .video_photo {
+  width: 100%;
+  transform: scale(1) translateZ(0);
+  transition: 0.3s ease-in-out;
+}
+.play {
+  position: absolute;
+  width: 120px;
+  left: 39.5%;
+  top: 33%;
+  border-radius: 50%;
+  height: 120px;
+  background-color: #fff;
+  z-index: 1;
+}
+.play .bi-play-fill {
+  color: #f34f3f;
+  position: absolute;
+  left: 35%;
+  top: 31%;
+  font-size: 40px;
+}
+.content h2 {
+  width: 60%;
+  font-weight: 500;
+  padding: 0 0 0 40px;
+  font-family: var(--heading_fontFamily);
+}
+.content h2 .valentina {
+  color: #f34f3f;
+}
+.content p {
+  font-size: 17px;
+  font-family: "Lora", serif;
+  line-height: 30px;
+  width: 93%;
+  padding: 0 0 0 40px;
+  margin: 25px 0 0 0;
+  color: #6e7989;
+}
+.content ul {
+  padding: 0 0 0 40px;
+}
+.content ul li span {
+  margin-top: 50px;
+  padding: 0 0 0 35px;
+  color: #6e7989;
+}
+.content ul li {
+  margin-top: 25px;
+  list-style: none;
+  background-image: url(/assets/img/people/h1-custom-icon.png);
+  background-repeat: no-repeat;
+}
+/* video end */
+
+/* flower export */
+
+.flower_exports {
+  padding: 60px 0 120px;
+}
+.flower_export_header {
+  padding: 50px;
+  text-align: center;
+}
+.flower_export_header h2 {
+  font-size: 50px - 12px;
+  font-family: var(--heading_fontFamily);
+  font-weight: 400;
+}
+.flower_export_header p {
+  font-size: 14px;
+  font-family: "Lora";
+  color: #6e7989;
+  font-weight: 500;
+  line-height: 2em;
+}
+.content h6 {
+  font-family: "montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  color: #6e7989;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+.content span {
+  font-family: "montserrat";
+  font-size: 12px;
+  color: #6e7989;
+}
+/* flower export end */
+
+/* slider-bottom start */
+.slider {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.item {
+  text-align: center;
+  padding-top: 30px;
+}
+.item p {
+  color: #4b4747;
+  font-family: Lora, serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.5em;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 25px;
+}
+.name {
+  margin-top: 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font: "lora";
+  letter-spacing: 1px;
+}
+.florist {
+  margin-top: 8px;
+  color: #86939e;
+  font-size: 12px;
+  font-family: "lora";
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.slider .previous,
+.slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: #86939e;
+  transition: 0.6s ease;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slider .previous:hover,
+.slider .next:hover {
+  color: black;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* slider end */
+
+/* main end  */
+
+/*footer start*/
+
+/* footer info start */
+#footer_info {
+  background-color: #fefaf3;
+  max-width: 100%;
+}
+.footer_head {
+  padding-top: 75px;
+}
+.footer_content {
+  margin-top: 25px;
+  margin-bottom: 65px;
+}
+.footer_header_content {
+  font-family: var(--title_fontFamily);
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer_content ul li {
+  font-size: 12px;
+  margin-top: 15px;
+  font-family: var(--title_fontFamily);
+  color: #96a5b2;
+  list-style: none;
+}
+.footer_content ul li a:hover {
+  color: rgba(255, 0, 0, 0.549);
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* footer info end */
+
+/* footer bottom start */
+/* .footer_bottom_CA p {
+  font-size: 13px;
+  color: #86939e;
+}
+.footer_bottom_CA p a {
+  font-size: 13px;
+  font-family: var(--title_fontFamily);
+  color: black;
+}
+.footer_bottom {
+  border-top: 0.5px solid #96a5b29e;
+}
+.footer_bottom_social {
+  font-size: 11px;
+  color: #86939e;
+  font-family: var(--title_fontFamily);
+  text-transform: uppercase;
+  letter-spacing: 2;
+}
+.footer_bottom_CA a:hover {
+  color: rgba(255, 0, 0, 0.549);
+}
+.footer_bottom_social a:hover {
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.549);
+} */
+/* footer bottom end
+/* footer end */
+
+/* respons start */

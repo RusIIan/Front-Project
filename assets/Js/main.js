@@ -1,37 +1,39 @@
-/* Устанавливаем индекс слайда по умолчанию */
-let slideIndex = 1;
-showSlides(slideIndex);
-
-/* Увеличиваем индекс на 1 — показываем следующий слайд*/
-function nextSlide() {
-  showSlides((slideIndex += 1));
-}
-
-/* Уменьшает индекс на 1 — показываем предыдущий слайд*/
-function previousSlide() {
-  showSlides((slideIndex -= 1));
-}
-
-/* Устанавливаем текущий слайд */
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-/* Функция перелистывания */
-function showSlides(n) {
-  let i;
-  let slides = document.querySelectorAll(".item");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  /* Проходим по каждому слайду в цикле for */
-  for (let slide of slides) {
-    slide.style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-}
+$(document).ready(function () {
+  $(".fa-bars").click(function () {
+    $(this).toggleClass("fa-times");
+    $(".navigation_body").toggleClass('nav-toggle');
+  });
+});
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    center: true,
+    loop: true,
+    margin: 10,
+    mouseDrag: false,
+    animateOut: "fadeOut",
+    nav: true,
+    dots: false,
+    navText: [
+      "<i class='bi bi-arrow-left left both'></i>",
+      "<i class='bi bi-arrow-right right both'></i>",
+    ],
+    responsiveClass: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: true,
+      },
+      1000: {
+        items: 1,
+        nav: true,
+        loop: true,
+      },
+    },
+  });
+});
