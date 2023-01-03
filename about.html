@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <title>About</title>
 </head>
 
@@ -42,10 +45,10 @@
 
     <main>
         <section id="about">
-                <div class="aboutUs text-center">
-                    <h1>About Us</h1>
-                    <p>Where flowers are our inspiration</p>
-                </div>
+            <div class="aboutUs text-center">
+                <h1>About Us</h1>
+                <p>Where flowers are our inspiration</p>
+            </div>
         </section>
 
         <section class="section-video ">
@@ -57,9 +60,11 @@
                                 <h2>We take <a class="valentina">flowers</a>
                                     personally
                                     & we bring you happiness</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
-                               <img class="ms-5 pt-3" src="/assets/img/imza/h2-sign-img.png" width="195px" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis
+                                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                                    quam felis, ultricies nec.</p>
+                                <img class="ms-5 pt-3" src="/assets/img/imza/h2-sign-img.png" width="195px" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 ">
@@ -136,54 +141,40 @@
             </div>
         </section>
 
-        <section class="slider-bottom">
-            <div class="slider">
+        <section id="second-slide">
+            <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img src="/assets/img/people//testimonial-img-1.png">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
-                    <div class="name">
-                        <span>Jasmine White</span>
-                    </div>
-                    <div class="florist">
-                        <span>Florist</span>
+                    <div class="slide">
+                        <div class="image-container d-flex align-items-center justify-content-center">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/testimonial-img-2.png"
+                                alt="" />
+                        </div>
+                        <h5 class="mt-4">
+                            Lorem ipsum dolor sit amet consectetur <br />
+                            adipisicing elit. Dolore, illum.
+                        </h5>
+                        <p class="name mt-4">anna barnes</p>
+                        <p class="job">florist</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/assets/img/people//testimonial-img-2.png">
-                    <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus lingua.</p>
-                    <div class="name">
-                        <span>Anna Barnes</span>
-                    </div>
-                    <div class="florist">
-                        <span>Florist</span>
+                    <div class="slide">
+                        <div class="image-container d-flex align-items-center justify-content-center">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/testimonial-img-1.png"
+                                alt="" />
+                        </div>
+                        <h5 class="mt-4">
+                            Lorem ipsum dolor sit amet consectetur <br />
+                            adipisicing elit. Dolore, illum.
+                        </h5>
+                        <p class="name mt-4">anna barnes</p>
+                        <p class="job">florist</p>
                     </div>
                 </div>
-                <a class="previous" onclick="previousSlide()"><svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
-                        xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                        xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="16.667px"
-                        viewBox="0 0 75.417 16.667" enable-background="new 0 0 75.417 16.667" xml:space="preserve">
-                        <line fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" x1="1.681" y1="7.817" x2="73.257" y2="7.817"></line>
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-miterlimit="10"
-                            points="8.235,1.351 1.681,7.817 8.235,15.316">
-                        </polyline>
-                    </svg></a>
-                <a class="next" onclick="nextSlide()"><svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
-                        xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                        xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="16.667px"
-                        viewBox="0 0 75.417 16.667" enable-background="new 0 0 75.417 16.667" xml:space="preserve">
-                        <line fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-miterlimit="10" x1="1.681" y1="7.817" x2="73.257" y2="7.817"></line>
-                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-miterlimit="10"
-                            points="67.235,1.351 73.985,7.817 67.235,15.316">
-                        </polyline>
-                    </svg></a>
             </div>
         </section>
+
+
     </main>
     <footer>
         <section id="footer_info">
@@ -272,11 +263,16 @@
 
 
     <script src="/assets/Js/Jquery.js"></script>
-    <script src="/assets/Js/script.js"></script>
     <script src="/assets/Js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
