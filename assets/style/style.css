@@ -6,7 +6,8 @@
   --title_fontFamily: "Montserrat", sans-serif;
 }
 
-a, * {
+a,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,54 +20,6 @@ header #navigation-first {
   max-width: 100%;
   height: 118px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-header #navigation-first .navigation_body {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  height: 10%;
-  width: auto;
-}
-header #navigation-first .navigation_body ul {
-  width: 100%;
-  height: 100%;
-}
-header #navigation-first .navigation_body li {
-  display: flex;
-  align-items: center;
-  float: left;
-  margin: 0 25px;
-}
-header #navigation-first .navigation_body li .nav_link {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-header #navigation-first .navigation_body li .nav_link:hover::after {
-  width: 100%;
-}
-header #navigation-first .navigation_body li ::after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 1.5px;
-  width: 0;
-  left: 0;
-  bottom: -5px;
-  transition: 0.5s;
-}
-header #navigation-first .navigation_body :nth-child(7),
-header #navigation-first .navigation_body :nth-child(8),
-header #navigation-first .navigation_body :nth-child(9) {
-  margin: 0 10px;
 }
 header .fa-bars {
   cursor: pointer;
@@ -282,40 +235,9 @@ main #slider .owl-carousel .right {
 }
 
 @media screen and (max-width: 1080px) {
-  header #navigation-first .fa-bars {
+  header .fa-bars {
     display: block;
     z-index: 9999999;
-  }
-  header #navigation-first .navigation_body {
-    position: fixed;
-    top: 3rem;
-    right: 0;
-    width: 350px;
-    height: auto;
-    background-color: rgb(184, 174, 174);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(1rem);
-    transition: 0.2s;
-    z-index: 9999999;
-  }
-  header #navigation-first .navigation_body ul {
-    display: flex;
-    flex-flow: column;
-    margin: 1rem;
-  }
-  header #navigation-first .navigation_body ul .nav_link_res {
-    padding-top: 1rem;
-    width: 20%;
-  }
-  header #navigation-first .navigation_body ul .nav_icon,
-header #navigation-first .navigation_body ul .nav_link_cart {
-    display: none;
-  }
-  header #navigation-first .nav-toggle {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
   }
 }
 @media screen and (max-width: 900px) {
