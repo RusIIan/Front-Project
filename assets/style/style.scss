@@ -16,7 +16,7 @@ a,
   outline: none;
   text-decoration: none;
 }
-//header start 
+//header start
 header {
   #navigation-first {
     max-width: 100%;
@@ -41,11 +41,10 @@ header {
 // main start
 main {
   #all_category {
-    
     .category-item {
       display: flex;
       flex-wrap: wrap;
-      
+
       .category_list {
         padding-right: 15px;
         .category_link {
@@ -59,7 +58,7 @@ main {
         color: #f34f3f;
       }
     }
-    .category-item-drop{
+    .category-item-drop {
       .category-list-drop {
         padding-top: 10px;
         .category_link {
@@ -73,7 +72,7 @@ main {
         color: #f34f3f;
       }
     }
-  
+
     .filter_content {
       position: relative;
       span {
@@ -170,7 +169,7 @@ main {
 //main end
 //*****//
 
-//back-photo fixed start 
+//back-photo fixed start
 #join_to_us {
   background-image: url("../img/h3-background-img.jpg");
   background-repeat: no-repeat;
@@ -214,9 +213,31 @@ main {
 #about_blog {
   background-color: #f8f8f8;
   height: 100%;
+  .card-img-top {
+    position: relative;
+  }
+  .data_blog {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: var(--title_fontFamily);
+  }
   .blog-name {
     font-family: var(--heading_fontFamily);
     font-size: 22px;
+  }
+  .card-body{
+    p{
+      font-size: 15px;
+      font-family:'Lora';
+      color: #7e7e7e;
+      margin: 15px;
+    }
   }
   .from_blog {
     padding-top: 7%;
@@ -228,11 +249,12 @@ main {
       padding-bottom: 2%;
       color: #8e8e8e;
       font-size: 18px;
+      font-family: serif;
       width: 53%;
     }
   }
 }
-//from our blog end 
+//from our blog end
 
 //*****//
 
@@ -289,7 +311,7 @@ main {
 }
 //footer slider end
 
-// header respons 
+// header respons
 @media screen and (max-width: 1080px) {
   header {
     .fa-bars {

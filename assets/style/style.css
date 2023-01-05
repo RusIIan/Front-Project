@@ -183,9 +183,29 @@ main #slider .owl-carousel .right {
   background-color: #f8f8f8;
   height: 100%;
 }
+#about_blog .card-img-top {
+  position: relative;
+}
+#about_blog .data_blog {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: var(--title_fontFamily);
+}
 #about_blog .blog-name {
   font-family: var(--heading_fontFamily);
   font-size: 22px;
+}
+#about_blog .card-body p {
+  font-size: 15px;
+  font-family: "Lora";
+  color: #7e7e7e;
+  margin: 15px;
 }
 #about_blog .from_blog {
   padding-top: 7%;
@@ -198,6 +218,7 @@ main #slider .owl-carousel .right {
   padding-bottom: 2%;
   color: #8e8e8e;
   font-size: 18px;
+  font-family: serif;
   width: 53%;
 }
 
