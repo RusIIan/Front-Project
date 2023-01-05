@@ -18,8 +18,6 @@ a,
 
 header #navigation-first {
   max-width: 100%;
-  height: 118px;
-  display: flex;
 }
 header .fa-bars {
   cursor: pointer;
@@ -49,21 +47,33 @@ main #all_category .category-item .category_list .category_link {
 main #all_category .category-item .active {
   color: #f34f3f;
 }
-main #all_category .filter .filter_content {
-  position: relative;
+main #all_category .category-item-drop .category-list-drop {
+  padding-top: 10px;
 }
-main #all_category .filter .filter_content span {
+main #all_category .category-item-drop .category-list-drop .category_link {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
   font-family: var(--title_fontFamily);
 }
-main #all_category .filter .filter_content:hover .filter_body {
+main #all_category .category-item-drop .active {
+  color: #f34f3f;
+}
+main #all_category .filter_content {
+  position: relative;
+}
+main #all_category .filter_content span {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--title_fontFamily);
+}
+main #all_category .filter_content:hover .filter_body {
   position: absolute;
   display: block;
-  z-index: 99999999;
 }
-main #all_category .filter .filter_body {
+main #all_category .filter_body {
+  position: absolute;
   text-align: left;
   display: none;
   background-color: rgb(255, 255, 255);
@@ -73,21 +83,26 @@ main #all_category .filter .filter_body {
   top: 25px;
   right: 1px;
 }
-main #all_category .filter .filter_body .filter_drop_header {
+main #all_category .filter_body .filter_drop_header {
   font-family: var(--heading_fontFamily);
   line-height: 22px;
   padding: 15px 15px;
   margin-left: 15px;
   margin-bottom: 25px;
 }
-main #all_category .filter .filter_body .product_price .product_price_list {
+main #all_category .filter_body .product_price .product_price_list {
   line-height: 15px;
   font-size: 14px;
   margin-left: 15px;
   padding: 15px 15px;
-  color: #6d6f70;
+  color: #abb2b7;
   font-family: var(--title_fontFamily);
   text-transform: capitalize;
+}
+main #slider {
+  position: relative;
+  z-index: -9;
+  margin-top: 0.5%;
 }
 main #slider .owl-carousel .item .owl-text-overlay {
   position: absolute;
@@ -228,11 +243,6 @@ main #slider .owl-carousel .right {
   text-transform: uppercase;
   font-weight: 500;
 }
-#second-slide .owl-carousel .item .slide .job {
-  color: #afafaf;
-  font-size: 12px;
-  font-weight: 500;
-}
 
 @media screen and (max-width: 1080px) {
   header .fa-bars {
@@ -240,7 +250,7 @@ main #slider .owl-carousel .right {
     z-index: 9999999;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .category-product {
     display: none;
   }
@@ -321,6 +331,7 @@ main #slider .owl-carousel .right {
   background-repeat: no-repeat;
   background-position: center 0;
   background-attachment: fixed;
+  margin-top: 35px;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -419,27 +430,30 @@ main #slider .owl-carousel .right {
     transform: rotate(90deg);
   }
 }
-main #category {
+#category {
+  margin-top: 35px;
   height: 25vh;
   background-color: #fafaf9;
   display: flex;
   align-items: center;
 }
-main #category .category_filter h1 {
+#category .category_filter h1 {
   font-size: 50px;
   font-family: var(--heading_fontFamily);
   font-weight: 400;
 }
-main #category .category_filter p {
+#category .category_filter p {
   font-size: 17px;
   font-family: "Lora";
   font-style: italic;
   color: #8e8e8e;
 }
-main .buy {
+
+.buy {
   position: relative;
 }
-main .new {
+
+.new {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -449,7 +463,8 @@ main .new {
   background-color: #f34f3f;
   font-family: var(--heading_fontFamily);
 }
-main .sold {
+
+.sold {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -459,7 +474,8 @@ main .sold {
   background-color: #000000;
   font-family: var(--heading_fontFamily);
 }
-main .sale {
+
+.sale {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -469,14 +485,16 @@ main .sale {
   background-color: #ffffff;
   font-family: var(--heading_fontFamily);
 }
-main .card-text-item {
+
+.card-text-item {
   margin-top: 5px;
 }
-main .card-text-item:hover {
+.card-text-item:hover {
   color: #f34f3f;
 }
 
 #blog_standard {
+  margin-top: 35px;
   height: 30vh;
   background-color: #fafaf9;
   display: flex;

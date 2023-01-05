@@ -17,12 +17,13 @@ $(document).ready(function () {
     $(this).next(".shop_layouts_drop").slideToggle();
     $(this).next(".blog_drop").slideToggle();
     $(this).next(".elements_blog").slideToggle();
+    $(this).next(".categories_dropdown").slideToggle();
   });
   $(document).click(function (e) {
     let target = e.target;
     if (
-      $(target).is(".dropdown-toggle") &&
-      $(target).parents().is(".dropdown-toggle")
+      !$(target).is(".dropdown-toggle") &&
+      !$(target).parents().is(".dropdown-toggle")
     ) {
       $(".dropdown").slideUp();
       $(".pages_drop").slideUp();
@@ -34,14 +35,10 @@ $(document).ready(function () {
       $(".portfoilio_drop").slideUp();
       $(".blog_drop").slideUp();
       $(".elements_drop").slideUp();
+      $(".categories_dropdown").slideUp();
     }
   });
 });
-
-                        
-
-
-
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     center: true,

@@ -17,6 +17,27 @@ a,
 
 /* header start */
 
+
+.cool-link_ {
+  display: inline-block;
+}
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    /* transition: width .3s; */
+}
 #navigation-first .wrapper {
   position: relative;
   background-color: rgb(255, 255, 255);
@@ -122,6 +143,32 @@ a,
     transform: rotate(180deg);
     color: #828282;
   }
+  .menu_respons_burger {
+    position: absolute;
+  }
+  .dropdown,
+  .pages_drop,
+  .portfoilio_drop,
+  .blog_drop,
+  .elements_blog {
+    display: none;
+    padding: 10px 10px;
+  }
+ 
+  .categories_dropdown{
+     display: none;
+     padding-top: 10px;
+  }
+  .shop_drop,
+  .product_drop,
+  .shop_pages_drop,
+  .shop_types_drop,
+  .shop_layouts_drop {
+    display: none;
+    top: 100%;
+    padding: 10px 10px;
+  }
+}
   @media screen and (min-width: 1080px) {
     .menu_respons_burger {
       display: none;
@@ -144,9 +191,9 @@ a,
       font-family: var(--title_fontFamily);
       font-weight: 500;
       transform: translateX(150px);
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
-    #navigation-first .menu_respons_burger{
+    #navigation-first .menu_respons_burger {
       line-height: 50px;
     }
     #navigation-first .fa-times {
@@ -197,42 +244,16 @@ a,
       transform: translateX(0);
     }
   }
-
-  /* header end */
-
-  /* second header start */
-
-  /* .menu_respons_burger {
-position: absolute;
-} */
-  .menu_respons_burger {
-    position: absolute;
-  }
-  .dropdown,
-  .pages_drop,
-  .portfoilio_drop,
-  .blog_drop,
-  .elements_blog {
-    display: none;
-    padding: 10px 10px;
-  }
-  .shop_drop,
-  .product_drop,
-  .shop_pages_drop,
-  .shop_types_drop,
-  .shop_layouts_drop {
-    display: none;
-    top: 100%;
-    padding: 10px 10px;
-  }
-}
-
 /* second header end */
-
 /* /* card start */
-#all_category{
+ @media screen and (min-width: 1000px) {
+    .categories_header {
+      display: none;
+    }
+   
+  }
+#all_category {
   position: relative;
-  z-index: -1;
 }
 .name_card {
   font-size: 14px;
@@ -256,7 +277,7 @@ position: absolute;
 .card:hover .image img {
   transform: scale(1.05) translateZ(0);
 }
-.image img {
+ .image img {
   width: 100%;
   transition: 0.2s ease-out;
   transform: scale(1) translateZ(0);
@@ -264,7 +285,7 @@ position: absolute;
 .title {
   position: relative;
 }
-.add_card {
+ .add_card {
   display: inline-block;
   position: absolute;
   left: 20%;
