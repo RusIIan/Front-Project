@@ -14,10 +14,7 @@ a,
   list-style: none;
   text-decoration: none;
 }
-
 /* header start */
-
-
 .cool-link_ {
   display: inline-block;
 }
@@ -169,6 +166,7 @@ a,
     padding: 10px 10px;
   }
 }
+/* respons header start */
   @media screen and (min-width: 1080px) {
     .menu_respons_burger {
       display: none;
@@ -244,8 +242,11 @@ a,
       transform: translateX(0);
     }
   }
-/* second header end */
-/* /* card start */
+/* respons header end */
+
+/*header end */
+
+/*  card start */
  @media screen and (min-width: 1000px) {
     .categories_header {
       display: none;
@@ -484,7 +485,6 @@ a,
   }
 }
 /* slider end */
-
 /* main end  */
 
 /*footer start*/
